@@ -13,7 +13,7 @@ class ListaEnlazada {
 
     }
 
-    agregarAlfinal(dato) {
+    agregarAlFinal(dato) {
         const nuevoNodo = new Nodo(dato);
         if (this.estaVacia()) {
             this.cabeza = nuevoNodo;
@@ -46,8 +46,16 @@ class ListaEnlazada {
         }
     }
 
+aArreglo(){
+    const elementos = [];
+    this.recorrer((dato)=>{elementos.push(dato)});
+    return elementos;
+}
+
+
 
 }
+
 
 module.exports = ListaEnlazada;
 
